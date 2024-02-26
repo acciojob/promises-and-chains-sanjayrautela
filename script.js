@@ -23,7 +23,7 @@ document.getElementById('myForm').addEventListener('submit', function(event){
   promise.then(function(){
     alert('Welcome, ' + name + '. You can vote.');
   }).catch(function(){
-   alert('Oh sorry, ' + name + '. You aren\'t old enough.');
+   alert('Oh sorry ' + name + '. You aren\'t old enough.');
   });
 
 
