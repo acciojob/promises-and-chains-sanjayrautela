@@ -6,7 +6,7 @@ document.getElementById('myForm').addEventListener('submit', function(event){
   var name = document.getElementById('name').value;
 
   if(!age || !name){
-    alert('please fill in all the fields');
+    alert('Please enter valid details');
     return;
   }
 
@@ -21,9 +21,9 @@ document.getElementById('myForm').addEventListener('submit', function(event){
   });
 
   promise.then(function(){
-    alert('welcome,' + name + '.you can vote');
+    alert('Welcome,' +" "+ name + " "+ '.You can vote');
   }).catch(function(){
-    alert('oh sorry' + name + 'you cnnot vote');
+    alert('Oh sorry'+" " + name + " " +'You aren\'t old enough');
   });
 
 
